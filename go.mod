@@ -4,7 +4,10 @@ go 1.21
 
 toolchain go1.22.5
 
-require github.com/wailsapp/wails/v2 v2.9.1
+require (
+	github.com/lib/pq v1.10.9
+	github.com/wailsapp/wails/v2 v2.9.1
+)
 
 require (
 	github.com/bep/debounce v1.2.1 // indirect
@@ -37,3 +40,5 @@ require (
 )
 
 // replace github.com/wailsapp/wails/v2 v2.9.1 => /home/iorin/go/pkg/mod
+
+replace cardfile/backend => ./backend
